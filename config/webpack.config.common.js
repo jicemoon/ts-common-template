@@ -8,7 +8,9 @@ const helpers = require('./helpers');
 const isDev = process.env.NODE_ENV !== 'production';
 
 module.exports = {
-  entry: './src/app/entry.ts',
+  entry: {
+    index: './src/app/entry.ts',
+  },
 
   resolve: {
     extensions: ['.ts', '.js']
